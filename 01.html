@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YFIRST</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.dropbtn{
+		background-color: #4caf50;
+		color: white;
+		padding: 16px;
+		border: none;
+		cursor: pointer;
+	}
+	/* 容器 定位下拉内容 */
+	.dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	/* 下拉内容（隐藏） */
+	.dropdown-content{
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgb(0,0,0,2);
+	}
+	/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+		body{
+			background-image:url('file://C:/Users/YFirst/Desktop/壁紙/ChMkJlbKweiIFY_6AA3VjT9w7FMAALGfwFCj8AADdWl862.jpg');
+		}
+
+		h1{
+			color: black;
+			text-align: center;
+
+			font:normal bold 30px "serif";
+			}
+			a:link{color: #ffffff;}
+			a:visited{color: #00ff00;}
+			a:hover{color: #ff0fff;}
+			a:active{color: #0000ff;}
+			p.time{text-align: right;}
+			/*.marked{} 嵌套用“。”*/
+	    p{
+	    	text-indent: 2em; /*首行缩进两个字节*/
+	    }
+	    :target {
+	    	color: red;
+			font-size: 30px;}
+	</style>
+<!-- 	<base target="_blank"  /> -->
+</head>
+<body>
+<div id="header" style="background-color:#aa0000;"><H1 style="margin-bottom: 0" center >YFIRST储物间</H1></div>
+<hr />
+<div class="dropdown" >
+	<button class="dropbtn">qqq</button>
+	<udiv class="dropdown-content">
+	<a href="#web">Web</a>
+	<a href="#game">Game</a>
+	<a href="#study">Study</a>
+	<a href="#lie over">Lie o</a>
+	<a href="#lie over">Lie o</a>
+	<a href="#lie over">Lie o</a>
+
+		
+	</ul>
+
+</div>
+<div id="center" style="background-color: green;height: 200px;width:650px;float: left;">
+<p><B>WdNMD</B></p>
+</div>
+<p class="time">2019年2月28日 版本：0.0.0.1</p>
+<div id="zhanghao"style="height: 200px;width: 300px;float: right;">
+	Username :<input type="text" id="name"><br>
+	password : <input type="password" id="password">
+	<input type="button" value="登录" onclick="sign()">
+	<script>
+		document.getElementById("zhanghao").innerHTML;
+		document.getElementById("name").innerHTML;
+		document.getElementById("password").innerHTML;
+		function sign(){
+			var username = document.getElementsById("name").values;
+			var password = document.getElementsById("password").values;
+			alert(username + password);
+		}
+	</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<p id="web" >WEB</p>
+<a href="http://www.baidu.com"><img src="file://C:/Users/YFirst/Desktop/baidu.gif" height="40px" alt="baidu"></a>
+<a href="http://www.bilibili.com" ><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2222976400,3502441702&fm=58&bpow=440&bpoh=440" height="40px"
+	alt="bilibili"></a>
+<a href="http://202.192.240.29/"><b>教务处系统</b></a>
+<a href="https://www.w3cschool.cn/"><strong>W3Cschool </strong></a>
+
+</body>
+</html>

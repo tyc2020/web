@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="jsq">
+    <div id="kong"></div>
+    <div id="shuru">
+        <input type="text" id="shu">
+    </div>
+    <div id="anniu">
+        <ul class="zong">
+            <li class="an1" onclick="clean()">C</li>
+            <li class="an1" onclick="zfh()">z</li>
+            <li class="an1" onclick="del()" >T</li>
+            <li class="an3" onclick="anshu('/')">/</li>
+            <li class="an1" onclick="anshu('7')">7</li>
+            <li class="an1" onclick="anshu('8')">8</li>
+            <li class="an1" onclick="anshu('9')">9</li>
+            <li class="an3" onclick="anshu('*')">*</li>
+            <li class="an1" onclick="anshu('4')">4</li>
+            <li class="an1" onclick="anshu('5')">5</li>
+            <li class="an1" onclick="anshu('6')">6</li>
+            <li class="an3" onclick="anshu('-')">-</li>
+            <li class="an1" onclick="anshu('1')">1</li>
+            <li class="an1" onclick="anshu('2')">2</li>
+            <li class="an1" onclick="anshu('3')">3</li>
+            <li class="an3" onclick="anshu('+')">+</li>
+            <li class="an1" onclick="anshu('0')">0</li>
+            <li class="an1"  onclick="anshu('.')">.</li>
+            <li class="an2" onclick="dengyu()">=</li>
+
+
+        </ul>
+
+    </div>
+</div>
+<script>
+    function anshu(shuzi){
+        var shuchu = document.getElementById("shu").value;
+        document.getElementById("shu").value += shuzi;
+    }
+    function dengyu(){
+        var shuchu = document.getElementById('shu').value;
+        var jieguo = eval(shuchu);
+        document.getElementById('shu').value = jieguo;
+    }
+
+    function clean(){
+        var shuchu = document.getElementById("shu").value;
+        document.getElementById("shu").value = '';
+    }
+    function del(){
+        var tg = document.getElementById("shu");
+        tg.value = tg.value.substring(0,tg.value.length-1);
+    }
+    function zfh(){
+        var zfh = document.getElementById('shu').value;
+        if(zfh.charCodeAt(0) == 45){
+            document.getElementById('shu').value = zfh.substr(1,zfh.length);
+        }
+        else{
+            document.getElementById('shu').value = '-' +zfh;
+        }
+    }
+ </script>
+</body>
+</html>
